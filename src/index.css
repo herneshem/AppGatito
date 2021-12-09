@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*BODY PRINCIPAL*/
+body{
+   
+   
+}
+#gatito{
+    background-color:rgb(250, 245, 245);
+    height: 650px;
+   
+    margin: 20px;
+}
+/*Principal*/
+
+.contenedor-principal{
+     
+    width: 100%;
+    
+}
+.banner {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+.banner .logo > img{
+    max-width: 150px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*CASA*/
+.contenedorcasa{
+    width: 100%;
+    
+    
+}
+.contenedorcasa-back{
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-image: url(../src/img/Titilavabo.jpg); 
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 95%;
+    margin: 5px auto;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+.contenedorcasa-back::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(51, 58, 177, 0.7);
+}
+
+
+.titi{
+
+width: 50%;
+}
+.textoamigos{
+width: 100%;
+padding: 40px 50px;
+color: #FFF;
+position: relative;
+}
+.textoamigos h2{
+    text-align: center;
+}
+
+/*Listado*/
+.menu{
+   width: 100%;
+}
+.menu ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    width: 95%;
+}
+
+.menu  a{
+    text-decoration: none;
+    
+}  
+
+
+/*Album*/
+.contenedor-album{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    
+   
+}
+
+/*Finales felices*/
+.carousel-item{
+    
+    width: 100%;
+    
+    
+}
+.carousel-item img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-height: 400px;
+    width: 80%;
+    margin: auto;
+    margin: 10px auto;
+    
+}
+
+/*CASA DE ACOGIDA*/
+.presentaciones{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 60% ;
+    margin: auto;
+}
+.presentaciones .acogidos{
+    display: grid;
+    grid-template-rows: 200px 150px;
+    border: solid;
+}
+.presentaciones .exp{
+    border: solid;
 }
