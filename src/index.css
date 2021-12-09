@@ -88,10 +88,39 @@ position: relative;
 
 /*Album*/
 .contenedor-album{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    
+    width: 70%;
+    margin: auto;
+   display: grid;
+   grid-template-rows: 1fr 1fr; 
+   gap: 2em;
    
+}
+.card-uno{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 2em;
+}
+.card-uno div{
+    border: solid green;
+    border-radius: 15px;
+    display: flex;
+}
+.card-uno .gato img{
+    height: 200px;
+    margin: auto;
+}
+.card-dos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    gap: 2em;
+}
+.card-dos div{
+    border: solid green;
+    border-radius: 15px;
+}
+.card-uno .perro img{
+    height: 200px;
+    margin: auto;
 }
 
 /*Finales felices*/

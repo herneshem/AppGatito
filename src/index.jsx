@@ -1,3 +1,4 @@
+/*ejecutar con comandos buil y deploy para git (json)*/
 import { render } from "@testing-library/react"
 import React, { Fragment} from "react"
 import ReactDOM from "react-dom"
