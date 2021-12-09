@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/herneshem/AppGatito.git/static/css/main.748fc670.chunk.css",
+    "main.js": "/herneshem/AppGatito.git/static/js/main.dfc36dbc.chunk.js",
+    "main.js.map": "/herneshem/AppGatito.git/static/js/main.dfc36dbc.chunk.js.map",
+    "runtime-main.js": "/herneshem/AppGatito.git/static/js/runtime-main.cdb9bc87.js",
+    "runtime-main.js.map": "/herneshem/AppGatito.git/static/js/runtime-main.cdb9bc87.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/herneshem/AppGatito.git/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.b75cd920.chunk.js": "/herneshem/AppGatito.git/static/js/2.b75cd920.chunk.js",
+    "static/js/2.b75cd920.chunk.js.map": "/herneshem/AppGatito.git/static/js/2.b75cd920.chunk.js.map",
+    "index.html": "/herneshem/AppGatito.git/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/herneshem/AppGatito.git/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.748fc670.chunk.css.map": "/herneshem/AppGatito.git/static/css/main.748fc670.chunk.css.map",
+    "static/js/2.b75cd920.chunk.js.LICENSE.txt": "/herneshem/AppGatito.git/static/js/2.b75cd920.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/herneshem/AppGatito.git/static/media/Titilavabo.50d25c6b.jpg",
+    "static/media/gattos.9eb12eed.jpg": "/herneshem/AppGatito.git/static/media/gattos.9eb12eed.jpg",
+    "static/media/simba.97869a8e.jpg": "/herneshem/AppGatito.git/static/media/simba.97869a8e.jpg",
+    "static/media/simba_Luna.a9f8de56.jpg": "/herneshem/AppGatito.git/static/media/simba_Luna.a9f8de56.jpg",
+    "static/media/simbae.d31f6e3d.jpg": "/herneshem/AppGatito.git/static/media/simbae.d31f6e3d.jpg",
+    "static/media/t1.bd9fe655.png": "/herneshem/AppGatito.git/static/media/t1.bd9fe655.png",
+    "static/media/titilavabo2.b28fc925.jpg": "/herneshem/AppGatito.git/static/media/titilavabo2.b28fc925.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cdb9bc87.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.b75cd920.chunk.js",
+    "static/css/main.748fc670.chunk.css",
+    "static/js/main.dfc36dbc.chunk.js"
+  ]
+}
