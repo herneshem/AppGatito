@@ -4,7 +4,7 @@ import React, { Fragment} from "react"
 import ReactDOM from "react-dom"
 import '../src/index.css'
 import t1 from "../src/img/t1.png"
-import tl2 from "../src/img/titilavabo2.jpg"
+import '../src/img_exp'
 import Casa  from "./casa.jsx"
 import Finalesf from "./routes/finalesf.jsx"
 import Album from "./routes/album"
@@ -13,17 +13,24 @@ import Canguro from "./routes/canguro"
 import Veterinario from "./routes/veterinario"
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import { Outlet } from "react-router"
+import img_exp from "../src/img_exp"
+import Caballo from "./routes/subrutas/enlacescaballos"
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+
+
 
 class Menu extends React.Component{ 
 render(){
 return(
+
+  
 <Fragment>
     
     <div className="contenedor-principal">
     
       <div className="banner">
-      <div className="logo"><img src={tl2}></img></div>
-      <div className="nombre">La casa de TITI</div>
+      <img src={img_exp.fondo}></img>
       </div>
       <hr />
       <Router>
@@ -34,7 +41,7 @@ return(
       <NavLink to="/finalesf" className="btn btn-success">Finales felices</NavLink> 
       <NavLink to="/canguro" className="btn btn-success">Canguro</NavLink> 
       <NavLink to="/veterinario" className="btn btn-success">Veterinario</NavLink> 
-       <NavLink to="/cielo" className="btn btn-success">Cielo virtual</NavLink> 
+       <NavLink to="/cielo" className="btn btn-success">Cielo virtual</NavLink>
       
     </ul>
     </nav>
@@ -46,7 +53,9 @@ return(
       <Route exact path='canguro' element={<Canguro />} />
       <Route exact path='veterinario' element={<Veterinario />} />
       <Route exact path='cielo' element={<Cielo />} />
-      <Route exact path='/' element={<Casa />} />
+      <Route exact path='/enlacescaballos' element={<Caballo />} />
+      
+
     </Routes>
     </Router>
     </div>

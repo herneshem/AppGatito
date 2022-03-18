@@ -1,105 +1,35 @@
-import { render } from "@testing-library/react";
-import React, { Component }  from "react";
-import gattos from "../img/gattos.jpg"
-import simba from "../img/simba.jpg"
-import simbaluna from "../img/simba_Luna.jpg"
-import simbae from "../img/simbae.jpg"
+import React from "react";
+import img_exp from "../img_exp";
 
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'
-/*INSTALAR npm i bootstrap reactstrap PARA CAROUSEL*/
+function Cielo(){
+  return(
+      <div className="contenedorCarrousel">
+        <div className="carrousel">
+          <div className="imagenesC"><img src={img_exp.t1} alt="" /></div>
+          <div className="flechasC">
+            <i><img className="fliz" src={img_exp.manoizq} alt="" /></i>
+            <i><img className="fled" src={img_exp.manod} alt="" /></i>
+          </div>
+        </div>
 
-const items = [
-  {
-    src: simba,
-    altText: 'Simba',
-    caption: 'Patona'
-  },
-  {
+        <div className="carrousel">
+          <div className="imagenesC">imagenes2</div>
+          <div className="flechasC">
+            <i>flecha i</i>
+            <i>flecha d</i>
+          </div>
+        </div>
 
-    src: simbaluna,
-    altText: 'Simba y Luna',
-    caption: 'Locas'
-    
-  },
-  {
-    src: simbae,
-    altText: 'Simbawe',
-    caption: 'Patona2'
-    
+        <div className="carrousel">
+          <div className="imagenesC">imagenes3</div>
+          <div className="flechasC">
+            <i>flecha i</i>
+            <i>flecha d</i>
+          </div>
+        </div>
+
+      </div>
+  )
+  
   }
-];
-
-class Finalesf extends Component{
-  constructor(props) {
-    super(props);
-    this.state = { activeIndex: 0 };
-    this.next = this.next.bind(this);
-    this.previous = this.previous.bind(this);
-    this.goToIndex = this.goToIndex.bind(this);
-    this.onExiting = this.onExiting.bind(this);
-    this.onExited = this.onExited.bind(this);
-  }
-
-  onExiting() {
-    this.animating = true;
-  }
-
-  onExited() {
-    this.animating = false;
-  }
-
-  next() {
-    if (this.animating) return;
-    const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
-    this.setState({ activeIndex: nextIndex });
-  }
-
-  previous() {
-    if (this.animating) return;
-    const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
-    this.setState({ activeIndex: nextIndex });
-  }
-
-  goToIndex(newIndex) {
-    if (this.animating) return;
-    this.setState({ activeIndex: newIndex });
-  }
-
-  render() {
-    const { activeIndex } = this.state;
-
-    const slides = items.map((item) => {
-      return (
-        <CarouselItem
-          onExiting={this.onExiting}
-          onExited={this.onExited}
-          key={item.src}
-        >
-          <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.altText} captionHeader={item.caption} />
-        </CarouselItem>
-      );
-    });
-
-    return (
-      <Carousel
-        activeIndex={activeIndex}
-        next={this.next}
-        previous={this.previous}
-      >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-      </Carousel>
-    );
-  }
-}
-export default Finalesf
+  export default Cielo

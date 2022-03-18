@@ -4,8 +4,8 @@ body{
    
 }
 #gatito{
-    background-color:rgb(250, 245, 245);
-    height: 650px;
+    
+    height: auto;
    
     margin: 20px;
 }
@@ -17,29 +17,34 @@ body{
     
 }
 .banner {
-    display: grid;
-    grid-template-columns: 75% 25%;
+  width: 100%;
+ max-height: 300px;
 }
-.banner .logo > img{
-    max-width: 150px;
+.banner img{
+    height: 200px;
+    width: 100%;
 }
+
 
 /*CASA*/
 .contenedorcasa{
-    width: 100%;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 50px;
+    
     
     
 }
-.contenedorcasa-back{
+/* .contenedorcasa-back{
     display: grid;
     margin: 10px;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
-    background-image: url(../src/img/Titilavabo.jpg); 
+    width: 85%;
+    background-image: url(../src/img/Titilavaboe.jpg); 
     background-repeat: no-repeat;
     background-position-x: center;
-    background-size: 95%;
-    margin: 5px auto;
+    margin: auto;
     background-size: cover;
     position: relative;
     height: 100vh;
@@ -52,18 +57,16 @@ body{
     left: 0;
     bottom: 0;
     background: rgba(51, 58, 177, 0.7);
-}
+} */
 
 
 .titi{
-
-width: 50%;
+padding: 10px 50px ;
 }
 .textoamigos{
-width: 100%;
-padding: 40px 50px;
-color: #FFF;
+padding: 10px 50px;
 position: relative;
+
 }
 .textoamigos h2{
     text-align: center;
@@ -72,16 +75,20 @@ position: relative;
 /*Listado*/
 .menu{
    width: 100%;
+   
+  
 }
 .menu ul{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     width: 95%;
+    
 }
 
 .menu  a{
     text-decoration: none;
+    
     
 }  
 
@@ -109,6 +116,10 @@ gap: 2em;
     height: 200px;
     margin: auto;
 }
+.card-uno .perro img{
+    height: 200px;
+    margin: auto;
+}
 .card-dos{
     display: grid;
     grid-template-columns: 1fr 1fr;   
@@ -117,42 +128,129 @@ gap: 2em;
 .card-dos div{
     border: solid green;
     border-radius: 15px;
+    display: flex;
 }
-.card-uno .perro img{
+.card-dos .conejo img{
+    height: 200px;
+    margin: auto;
+}
+.card-dos .caballo img{
     height: 200px;
     margin: auto;
 }
 
 /*Finales felices*/
-.carousel-item{
-    
+.carrousel{
     width: 100%;
     
+    height: 300px;
+    position: relative;
     
+    
+     
 }
-.carousel-item img{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    max-height: 400px;
-    width: 80%;
-    margin: auto;
-    margin: 10px auto;
+.imagenesC{
     
+    height: 100%;
+    text-align: center;
+    
+    
+    
+} 
+.flechasC{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    padding: 20px;
+
 }
 
 /*CASA DE ACOGIDA*/
 .presentaciones{
     width: 80%;
+    height: 100%;
     display: grid;
-    grid-template-columns: 40% 60% ;
+    grid-template-columns: 50% 50% ;
     margin: auto;
 }
 .presentaciones .acogidos{
     display: grid;
-    grid-template-rows: 200px 150px;
-    border: solid;
+    grid-template-rows: 200px 200px;
+    border: solid 2px rgb(225, 226, 231);
+    border-radius: 25px;
+    background-color:rgb(248, 238, 238);
+    margin-bottom: 10px;
+}
+
+.acogidos img{
+    width: 50%;
+    height: 200px;
+    border-radius: 20px;
+    
+}
+.acogidos .img_slide{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
 }
 .presentaciones .exp{
-    border: solid;
+    background-color: rgb(248, 238, 238);
+    padding: 40px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+
 }
+.presentaciones .exp h3{
+    text-align: center;
+    color: blueviolet;
+}
+
+/*VETERINARIO*/
+
+.bloqueVet{
+    display: grid;
+    grid-template-columns: 30% 60%;
+}
+
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+  }
+  
+  .vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #04AA6D; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+
+  .respuestas #mostrararenero{
+    height: 500px;
+    
+  }
+  .respuestas #mostrarorinar{
+    height: 500px;
+    display: none;
+    
+  }
+  .respuestas #mostrarlimpieza{
+    height: 500px;
+      display: none;
+  }
+  .respuestas #mostrarleganas{
+    height: 500px;
+      display: none;
+  }

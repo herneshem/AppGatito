@@ -10,8 +10,9 @@ class Casa extends React.Component{
    
     <div className="contenedorcasa">
       <Outlet />
+      <div className="titi">outouo</div>
       <div className="contenedorcasa-back">
-         <div className="titi"></div>
+         
          
          <div className="textoamigos">
             <h2>Memoria</h2>
